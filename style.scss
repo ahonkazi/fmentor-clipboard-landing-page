@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+html {
+    font-size: 18px;
+}
+
+:root {
+    //Colors
+    // Primary
+    --StrongCyan: #26baa4;
+    --LightBlue: hsl(233, 100%, 69%);
+    //Neutral
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+
+}
+
+.text-StrongCyan {
+    color: var(--StrongCyan);
+}
+
+.text-LightBlue {
+    color: var(--LightBlue);
+}
+
+.text-GrayishBlue {
+    color: var(--GrayishBlue);
+}
+
+.text-DarkGrayishBlue {
+    color: var(--DarkGrayishBlue);
+}
+
+.bg-StrongCyan {
+    background-color: var(--StrongCyan);
+}
+
+.bg-LightBlue {
+    background-color: var(--LightBlue);
+}
+
+.bg-GrayishBlue {
+    background-color: var(--GrayishBlue);
+}
+
+.bg-DarkGrayishBlue {
+    background-color: var(--DarkGrayishBlue);
+}
+
+
+// header
+
+header {
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        background-image: url('./images/bg-header-mobile.png') !important;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+.btn-download-ios {
+    border-color: hsl(171, 69%, 36%);
+}
+
+.btn-download-mac {
+    border-color: hsl(233, 71%, 59%);
+}
+
+// footer
+
+.footer-link {
+    transition: all 300ms;
+
+    &:hover {
+        color: var(--StrongCyan);
+    }
+}
